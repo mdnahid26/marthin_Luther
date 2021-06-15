@@ -49,8 +49,8 @@ a{
 
 /*navber css start*/
 #navber{
-    background-color: red;
-    position:sticky;
+    background-color: transparent;
+    position:fixed;
     top: 0;
     left: 0;
     z-index: 9999999;
