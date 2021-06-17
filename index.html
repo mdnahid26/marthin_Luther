@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="font/flaticon.css">
     <link rel="stylesheet" href="css/fontwosame.min.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -43,7 +45,9 @@
             <div class="banner_contant">
                 <h3>Hello! i'm</h3>
                 <h2>Martin Luther</h2>
-                <p>WEB DESIGN | DIGITAL MARKETING | UX DESIGN | WEB DEVELOPMENT | MOBILE APPS</p>
+               <!--<p id="typed">WEB DESIGN | DIGITAL MARKETING | UX DESIGN | WEB DEVELOPMENT | MOBILE APPS</p>-->
+               <p id="typed"></p>
+               
                 <a href="#">let'stalknew</a>
             </div>
         </div>
@@ -175,112 +179,94 @@
             </div>
             <div class="portfolio_contact">
                 <ul>
-                    <li><a href="#">all</a></li>
-                    <li><a href="#">branding</a></li>
-                    <li><a href="#">photoshopo</a></li>
-                    <li><a href="#">fashion</a></li>
-                    <li><a href="#">product</a></li>
+                    <li data-filter="all">all</li>
+                    <li data-filter="branding">branding</li>
+                    <li data-filter="photoshopo">photoshopo</li>
+                    <li data-filter="fashion">fashion</li>
+                    <li data-filter="product">product</li>
                 </ul>
             </div>
             <div class="portfolio_item">
-                <div class="row">
-                    <div class="portfolio_item_contact">
+                <div class="row portfolio_filter">
+                    <div class="portfolio_item_contact" data-category="branding">
                         <div class="portfolio_img">
                             <img src="img/portfolio-1.jpg" alt="">
                         </div>
-                        <div class="portfolio_info">
-                            <a href="#">
-                                <i></i>
-                            </a>
-                            <h6><a href="#">Our Photography</a></h6>
+                        <div class="portfolio_icon">
+                        <a class="portfolio_img_icon" data-gall="portfolio_galary" href="img/portfolio-1.jpg"></a>
+                        <h4><a href="#">Our Photography</a></h4>
                         </div>
                     </div>
-                    <div class="portfolio_item_contact">
+                    <div class="portfolio_item_contact" data-category="photoshopo">
                         <div class="portfolio_img">
                             <img src="img/portfolio-2.jpg" alt="">
                         </div>
-                        <div class="portfolio_info">
-                            <a href="#">
-                                <i></i>
-                            </a>
-                            <h6><a href="#">Our Photography</a></h6>
+                        <div class="portfolio_icon">
+                            <a class="portfolio_img_icon" data-gall="portfolio_galary" href="img/portfolio-2.jpg"></a>
+                            <h4><a href="#">Our Photography</a></h4>
                         </div>
                     </div>
-                    <div class="portfolio_item_contact">
+                    <div class="portfolio_item_contact" data-category="fashion">
                         <div class="portfolio_img">
                             <img src="img/portfolio-3.jpg" alt="">
                         </div>
-                        <div class="portfolio_info">
-                            <a href="#">
-                                <i></i>
-                            </a>
-                            <h6><a href="#">Our Photography</a></h6>
+                        <div class="portfolio_icon">
+                            <a class="portfolio_img_icon" data-gall="portfolio_galary" href="img/portfolio-3.jpg"></a>
+                            <h4><a href="#">Our Photography</a></h4>
                         </div>
                     </div>
-                    <div class="portfolio_item_contact">
+                    <div class="portfolio_item_contact" data-category="product">
                         <div class="portfolio_img">
                             <img src="img/portfolio-4.jpg" alt="">
                         </div>
-                        <div class="portfolio_info">
-                            <a href="#">
-                                <i></i>
-                            </a>
-                            <h6><a href="#">Our Photography</a></h6>
+                        <div class="portfolio_icon">
+                            <a class="portfolio_img_icon" data-gall="portfolio_galary" href="img/portfolio-4.jpg"></a>
+                            <h4><a href="#">Our Photography</a></h4>
                         </div>
                     </div>
-                    <div class="portfolio_item_contact">
+                    <div class="portfolio_item_contact" data-category="product">
                         <div class="portfolio_img">
                             <img src="img/portfolio-5.jpg" alt="">
                         </div>
-                        <div class="portfolio_info">
-                            <a href="#">
-                                <i></i>
-                            </a>
-                            <h6><a href="#">Our Photography</a></h6>
+                        <div class="portfolio_icon">
+                            <a class="portfolio_img_icon" data-gall="portfolio_galary" href="img/portfolio-5.jpg"></a>
+                            <h4><a href="#">Our Photography</a></h4>
                         </div>
                     </div>
-                    <div class="portfolio_item_contact">
+                    <div class="portfolio_item_contact" data-category="fashion">
                         <div class="portfolio_img">
                             <img src="img/portfolio-6.jpg" alt="">
                         </div>
-                        <div class="portfolio_info">
-                            <a href="#">
-                                <i></i>
-                            </a>
-                            <h6><a href="#">Our Photography</a></h6>
+                        <div class="portfolio_icon">
+                            <a class="portfolio_img_icon" data-gall="portfolio_galary" href="img/portfolio-6.jpg"></a>
+                            <h4><a href="#">Our Photography</a></h4>
                         </div>
                     </div>
-                    <div class="portfolio_item_contact">
+                    <div class="portfolio_item_contact" data-category="photoshopo">
                         <div class="portfolio_img">
                             <img src="img/portfolio-7.jpg" alt="">
                         </div>
-                        <div class="portfolio_info">
-                            <a href="#">
-                                <i></i>
-                            </a>
-                            <h6><a href="#">Our Photography</a></h6>
+                        <div class="portfolio_icon">
+                            <a class="portfolio_img_icon" data-gall="portfolio_galary" href="img/portfolio-7.jpg"></a>
+                            <h4><a href="#">Our Photography</a></h4>
                         </div>
                     </div>
-                    <div class="portfolio_item_contact">
+                    <div class="portfolio_item_contact" data-category="branding">
                         <div class="portfolio_img">
                             <img src="img/portfolio-8.jpg" alt="">
                         </div>
-                        <div class="portfolio_info">
-                            <a href="#">
-                                <i></i>
-                            </a>
-                            <h6><a href="#">Our Photography</a></h6>
+                        <div class="portfolio_icon">
+                            <class="portfolio_img_icon" data-gall="portfolio_galary" href="img/portfolio-8.jpg"></a>
+                            <h4><a href="#">Our Photography</a></h4>
                         </div>
                     </div>
-                    <div class="portfolio_item_contact">
+                    <div class="portfolio_item_contact" data-category="all">
                         <div class="portfolio_img">
                             <img src="img/portfolio-1.jpg" alt="">
                         </div>
-                        <div class="portfolio_info">
-                            <a href="#">
-                                <i></i>
-                            </a>
-                            <h6><a href="#">Our Photography</a></h6>
+                        <div class="portfolio_icon">
+                            <a class="portfolio_img_icon" data-gall="portfolio_galary" href="img/portfolio-1.jpg"></a>
+                            <h4><a href="#">Our Photography</a></h4>
                         </div>
                     </div>
                 </div>
@@ -292,12 +278,22 @@
 
     <!--founder section start-->
     <section id="founder">
-        <div class="continar">
-            <div class="founder_content">
-                <img src="img/team-2.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit qui laudantium porro temporibus, cupiditate voluptatem quasi pariatur molestiae deserunt eaque sed corrupti, nobis illum!</p>
-                <h6>Nancy Bayers</h6>
-                <label>Co-founder</label>
+        <div class="funder_slider_item">
+            <div class="continar">
+                <div class="founder_content">
+                    <img src="img/team-2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit qui laudantium porro temporibus, cupiditate voluptatem quasi pariatur molestiae deserunt eaque sed corrupti, nobis illum!</p>
+                    <h6>Nancy Bayers</h6>
+                    <label>Co-founder</label>
+                </div>
+            </div>
+            <div class="continar">
+                <div class="founder_content">
+                    <img src="img/team-2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit qui laudantium porro temporibus, cupiditate voluptatem quasi pariatur molestiae deserunt eaque sed corrupti, nobis illum!</p>
+                    <h6>Nancy Bayers</h6>
+                    <label>Co-founder</label>
+                </div>
             </div>
         </div>
     </section>
@@ -426,6 +422,11 @@
 
     <!--<noscript>you need to enable java script</noscript>-->
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/jquery.filterizr.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/app.js">
     
     </script>

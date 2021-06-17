@@ -37,4 +37,31 @@ $(function(){
         },1000)
        }
     })
+    $(".portfolio_img_icon").venobox({
+        spinner:'rotating-plane',
+        spinColor:'black'
+
+    })
+
+    //typed
+    var typed = new Typed('#typed', {
+        strings:[
+            'WEB DESIGN |',
+            'DIGITAL MARKETING |',
+            'UX DESIGN |',
+            'WEB DEVELOPMENT |',
+            'MOBILE APPS'
+        ],
+        loop: 'true',
+      });
+      //filterizr
+   $(".portfolio_filter").filterizr({
+        
+      });
+
+      //niceScroll
+      $("body").niceScroll();
+
+      //slick
+      $("#founder").slick()
 })
