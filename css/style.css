@@ -395,14 +395,14 @@ a{
     margin: 0 -12px;
     
 }
-#Portfolio .portfolio_item .portfolio_item_contact{
-    width: calc(100%/3 - 30px);
-    margin: 15px;
+#Portfolio .portfolio_item .filtr-item{
+    width: calc(30% );
     padding: 12px;
+    margin: 15px;
     position: relative;
-    padding: 10px;
     box-shadow:rgba(58, 78, 95, 0.2) 0 10px 16px,
      rgba(58, 78, 95, 0.05) 0 -5px 16px;
+    padding: 10px; 
 }
 #Portfolio .portfolio_item .portfolio_item_contact .portfolio_img img{
     width: 100%;
@@ -471,20 +471,39 @@ a{
     background-color: #F3F3F3;
     text-align: center;
 }
-#founder .founder_content{
+#founder .founder_slick_slider {
     width: 45%;
     margin: 0 auto;
-    border-radius: 5px;
+}
+#founder .founder_slick_slider .slider_dots li{
+    display: inline-block;
+    margin: 5px;
+}
+#founder .founder_slick_slider .slider_dots li button{
+    font-size: 0;
+    border: 1px solid #f34236;
+    background-color:none;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    transition: all linear .8s;
+}
+#founder .founder_slick_slider .slider_dots li.slick-active button{
+    background-color: #f34236;
+}
+#founder .founder_content{
+    width: 100%;
     background-color: #fff;
+    padding: 50px 25px 30px;
+    border-radius: 5px;
     box-shadow: 0 10px 16px rgba(58, 78, 95, 0.2),
     0 -5px 16px rgba(58, 78, 95, 0.05);
-    padding: 50px 25px 30px;
-
 }
 #founder .founder_content img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin: 0 auto;
 }
 #founder .founder_content p{
     font-size: 16px;
@@ -699,12 +718,33 @@ a{
     cursor: pointer;
     display: none;
 }
-#backToTop.backToTopanimate
-#preloder{
+#preloder_continar{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: rgba(243, 66, 54, 0.4);
     height: 100vh;
+    z-index: 9999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloder{
+    width: 150px;
+    height: 150px;
+    border: 5px double #888;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: preloder .7s linear infinite;
+}
+@keyframes preloder{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
 }
 

@@ -22,6 +22,7 @@ $(function(){
             scrollTop:0
         },1000)
     })
+  
 
     //smoth scroll
     $('a').on('click',function(e){
@@ -37,10 +38,28 @@ $(function(){
         },1000)
        }
     })
+    
+    //
     $(".portfolio_img_icon").venobox({
         spinner:'rotating-plane',
         spinColor:'black'
 
+    })
+
+    //preloader
+    $(window).on('load',function(){
+        $('#preloder_continar').fadeOut(2000)
+        $('.preloder').slideDown(1000)
+
+    })
+
+    //slider slick
+    $('.founder_slick_slider').slick({
+        arrows:false,
+        autoplay:true,
+        autoplaySpeed:4000,
+        dots:true,
+        dotsClass:'slider_dots',
     })
 
     //typed
@@ -55,13 +74,13 @@ $(function(){
         loop: 'true',
       });
       //filterizr
-   $(".portfolio_filter").filterizr({
-        
-      });
+      $('flitr-item').filterizr()
 
       //niceScroll
       $("body").niceScroll();
 
       //slick
       $("#founder").slick()
+
+      $('.portfolio_item_continar').filterizr()
 })
